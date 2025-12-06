@@ -142,9 +142,6 @@ const params = {
       });
   });
 }
-
-//window.addEventListener('DOMContentLoaded', testEmailJS);
-
 // Projects Slider Functionality
 const projectsList = document.querySelector('.projects-list');
 const projectCards = document.querySelectorAll('.project-card');
