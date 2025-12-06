@@ -190,8 +190,8 @@ function showNext() {
   }
 }
 
-prevBtn.addEventListener('click', showPrev);
-nextBtn.addEventListener('click', showNext);
+if(prevBtn)addEventListener('click', showPrev);
+if(nextBtn)addEventListener('click', showNext);
 
 window.addEventListener('resize', () => {
   updateCardsPerView();
