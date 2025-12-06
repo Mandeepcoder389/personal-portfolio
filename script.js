@@ -120,7 +120,7 @@ const params = {
     submitBtn.disabled = true;
 
     // Send email using EmailJS
-    emailjs.send('service_3pwdr6i', 'template_6tnbl3o', params)
+    emailjs.send('service_3pwdr6i', 'template_hxtsaqp', params)
       .then(function(response) {
         console.log('SUCCESS!', response.status, response.text);
         alert('Thank you for reaching out! Your message has been sent.');
