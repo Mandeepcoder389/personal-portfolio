@@ -107,11 +107,10 @@ if (contactForm) {
 const params = {
   name: formData.get('name'),
   email: formData.get('email'),
-  message: formData.get('message'),
+  massage: formData.get('message'),
   mobile: formData.get('mobile')
 };
 
-    // Debug: Log the parameters
     console.log('Sending email with params:', params);
 
     // Show loading message
@@ -121,7 +120,7 @@ const params = {
     submitBtn.disabled = true;
 
     // Send email using EmailJS
-    emailjs.send('service_3pwdr6i', 'template_hroeu3u', params)
+    emailjs.send('service_3pwdr6i', 'template_6tnbl3o', params)
       .then(function(response) {
         console.log('SUCCESS!', response.status, response.text);
         alert('Thank you for reaching out! Your message has been sent.');
@@ -142,6 +141,7 @@ const params = {
       });
   });
 }
+
 // Projects Slider Functionality
 const projectsList = document.querySelector('.projects-list');
 const projectCards = document.querySelectorAll('.project-card');
