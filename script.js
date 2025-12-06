@@ -143,7 +143,7 @@ const params = {
   });
 }
 
-window.addEventListener('DOMContentLoaded', testEmailJS);
+//window.addEventListener('DOMContentLoaded', testEmailJS);
 
 // Projects Slider Functionality
 const projectsList = document.querySelector('.projects-list');
