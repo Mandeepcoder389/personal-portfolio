@@ -103,11 +103,13 @@ if (contactForm) {
 
     // Collect form data
     const formData = new FormData(contactForm);
-    const params = {
-      from_name: formData.get('name'),
-      from_email: formData.get('email'),
-      message: formData.get('message')
-    };
+    // ...existing code...
+const params = {
+  name: formData.get('name'),
+  email: formData.get('email'),
+  message: formData.get('message'),
+  mobile: formData.get('mobile')
+};
 
     // Debug: Log the parameters
     console.log('Sending email with params:', params);
@@ -141,21 +143,6 @@ if (contactForm) {
   });
 }
 
-// Test EmailJS connection (uncomment to test)
-// function testEmailJS() {
-//   console.log('Testing EmailJS...');
-//   emailjs.send('service_3pwdr6i', 'template_hroeu3u', {
-//     from_name: 'Test User',
-//     from_email: 'test@example.com',
-//     message: 'This is a test message'
-//   })
-//   .then(function(response) {
-//     console.log('Test SUCCESS!', response);
-//   }, function(error) {
-//     console.log('Test FAILED!', error);
-//   });
-// }
-// Uncomment the line below to test EmailJS when page loads
 window.addEventListener('DOMContentLoaded', testEmailJS);
 
 // Projects Slider Functionality
